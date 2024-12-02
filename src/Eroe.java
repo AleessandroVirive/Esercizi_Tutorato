@@ -9,7 +9,7 @@ public class Eroe extends Personaggio {
 
     public void guarisci(){
         if () {
-            System.out.println(" Il tuo eroe si cura e la sua salute è ora a "+ );
+            System.out.println(" Il tuo eroe si cura e la sua salute è ora a " + getPuntiVita());
         }
     }
 }
