@@ -13,6 +13,5 @@ public abstract class Eroe extends Personaggio {
         }
         this.getPuntiVita() += cura;
         System.out.println(" Il tuo eroe si cura e la sua salute è ora a " + getPuntiVita());
-
     }
 }

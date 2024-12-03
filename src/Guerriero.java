@@ -7,8 +7,9 @@ public class Guerriero extends Eroe{
     }
 
     public void spadataGuerriero (){
-        int dannoTotale = getPuntiAttacco() + modificatoreGuerriero;
-        System.out.println(getNome() + " usa un attacco speciale! Danno totale: " + dannoTotale);
+        int attaccoTotale = getPuntiAttacco() + modificatoreGuerriero;
+        super.attacca();
+        System.out.println(getNome() + " usa un attacco speciale! Danno totale: " + attaccoTotale);
 
     }
 
