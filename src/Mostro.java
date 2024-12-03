@@ -1,10 +1,7 @@
-public class Mostro extends Personaggio{
+public abstract class Mostro extends Personaggio{
 
-    public Mostro (int puntiVita, int puntiAttacco) {
-        this.puntiVita
+    public Mostro (String name, int puntiVita, int puntiAttacco) {
+        super (name, puntiVita, puntiAttacco);
     }
-
-
-    
 
 }

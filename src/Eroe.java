@@ -1,4 +1,4 @@
-public class Eroe extends Personaggio {
+public abstract class Eroe extends Personaggio {
 
     private int puntiGuarigione;
 
@@ -11,7 +11,7 @@ public class Eroe extends Personaggio {
         if (getPuntiVita()>=getPuntiVitaMassimi()) {
             return;
         }
-        this.getPuntiVita() = this.getPuntiVita() + cura;
+        this.getPuntiVita() += cura;
         System.out.println(" Il tuo eroe si cura e la sua salute è ora a " + getPuntiVita());
 
     }

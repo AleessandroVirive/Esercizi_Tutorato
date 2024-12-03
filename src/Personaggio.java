@@ -52,6 +52,8 @@ public abstract class Personaggio {
     public int getPuntiVitaMassimi() {
         return puntiVitaMassimi;
     }
+
+    public int getPuntiAttacco() {return puntiAttacco;}
 }
 
 
