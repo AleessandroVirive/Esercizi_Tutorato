@@ -7,11 +7,11 @@ public abstract class Eroe extends Personaggio {
         this.puntiGuarigione = puntiGuarigione;
     }
 
-    public void guarisci(int cura) {
+    public void guarisci() {
         if (getPuntiVita()>=getPuntiVitaMassimi()) {
             return;
         }
-        this.getPuntiVita() += cura;
+        this.getPuntiVita() += puntiGuarigione;
         System.out.println(" Il tuo eroe si cura e la sua salute è ora a " + getPuntiVita());
     }
 }

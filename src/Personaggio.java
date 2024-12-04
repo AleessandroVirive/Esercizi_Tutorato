@@ -1,10 +1,11 @@
+//CLASSE PERSONAGGIO
 public abstract class Personaggio {
     private boolean vivo;
     private String nome;
     private int puntiVita;
     private int puntiAttacco;
     private final int puntiVitaMassimi;
-
+//COSTRUTTORE PER OGGETTO PERSONAGGIO
     public Personaggio(String nome, int puntiVita, int puntiAttacco) {
         this.nome = nome;
         this.vivo = true;
@@ -13,12 +14,12 @@ public abstract class Personaggio {
     }
 
     public void attacca(Personaggio personaggio) {
-        if (!vivo){
+        if (!vivo){             //CONTROLLA SE IL PERSONAGGIO CHE ATTACCA NON SIA MORTO
            System.out.println("sei già morto!");
            return;
         }
 
-        if (!personaggio.isVivo()){
+        if (!personaggio.isVivo()){   //CONTROLLA SE IL PERSONAGGIO CHE VIENE ATTACCATO NON SIA MORTO
             System.out.println("è già morto!");
             return;
         }
@@ -53,7 +54,8 @@ public abstract class Personaggio {
         return puntiVitaMassimi;
     }
 
-    public int getPuntiAttacco() {return puntiAttacco;}
+    public int getPuntiAttacco() {
+        return puntiAttacco;}
 }
 
 

@@ -8,6 +8,7 @@ public class Mago extends Eroe{
 
     public void incantesimoMago(){
 
+
     }
 
 }

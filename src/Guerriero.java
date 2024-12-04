@@ -1,16 +1,13 @@
 public class Guerriero extends Eroe{
-    private int modificatoreGuerriero;
+    private double modificatoreGuerriero;
 
-    public Guerriero(String nome, int puntiVita, int puntiAttaco, int puntiGuarigione, int modificatoreGuerriero) {
-        super( nome, puntiVita, puntiAttaco, puntiGuarigione);
+    public Guerriero(String nome, int puntiVita, int puntiAttacco, int puntiGuarigione, double modificatoreGuerriero) {
+        super( nome, puntiVita, puntiAttacco, puntiGuarigione);
         this.modificatoreGuerriero = modificatoreGuerriero;
     }
 
-    public void spadataGuerriero (){
-        int attaccoTotale = getPuntiAttacco() + modificatoreGuerriero;
-        super.attacca();
-        System.out.println(getNome() + " usa un attacco speciale! Danno totale: " + attaccoTotale);
-
+    public int spadataGuerriero (double danno, Personaggio personaggio){
+        int danno = (int) (getPuntiAttacco() * modificatoreGuerriero);
+        System.out.println(getNome() + " usa un attacco speciale! Danno totale: " + danno);
     }
-
 }
